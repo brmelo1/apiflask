@@ -8,7 +8,7 @@ db_config = {
     'user': 'postgres',
     'password': 'admin',
     'dbname': 'postgres',
-    'host': 'localhost',
+    'host': '192.168.100.250',
     'port': '5432'  # Porta padrão do PostgreSQL
 }
 
@@ -96,8 +96,6 @@ def delete_city_nome(nome):
     conn.close()
 
     return jsonify({"msg":f"{nome} exlcuido do banco"})
-
-
 
 
 
